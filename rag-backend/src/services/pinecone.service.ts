@@ -1,6 +1,7 @@
 import { pineconeIndex } from "../config/pinecone.js";
 
 interface VectorMetadata {
+  [key: string]: string | number;
   text: string;
   source: string;
   chunkIndex: number;
